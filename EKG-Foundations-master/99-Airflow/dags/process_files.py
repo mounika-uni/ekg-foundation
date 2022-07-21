@@ -13,8 +13,8 @@ import requests
 
 
 def download_file():
-    indata = requests.get('https://raw.githubusercontent.com/pavanmg/EKG-Foundations/master/04A-postgress/create_world.sql')
-    with open('/opt/airflow/dags/files/create_world.sql', 'w') as outfile:
+    indata = requests.get('https://raw.githubusercontent.com/mounika-uni/ekg-foundation/master/EKG-Foundations-master/04 -Postgress/world.sql')
+    with open('/opt/airflow/dags/files/world.sql', 'w') as outfile:
         outfile.write(indata.text)
 
 
